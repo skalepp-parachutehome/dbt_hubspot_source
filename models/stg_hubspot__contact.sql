@@ -50,7 +50,8 @@ with base as (
 
     from macro
 {% endif %}    
-    
+
+    where _fivetran_deleted = false    
 )
 
 select *
